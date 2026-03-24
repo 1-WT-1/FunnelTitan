@@ -1,0 +1,7 @@
+locale|en
+MOD_CHARYBDIS_DESC|A K225 variant with a front triangle section hollowed out into a funnel.
+MOD_CHARYBDIS_BRIEF|Funnel K225 variant
+SHIP_AT225_CB|Antonoff-Titan K225 "Charybdis"
+SYSTEM_FUNNEL_GRINDERS|Funnel Grinders
+SHIP_AT225_CB_DESC|A K225 variant with a front triangle section hollowed out into a funnel. \n WIP NEED HELP
+SHIP_AT225_CB_SPECS|Make: Antonoff-Titan Heavy Industries\nLow-Stress Hardpoints: 2\nDocking Bays: 4\nCrew: 12\nDry mass: 220,100 kg\nCargo bay: 246 m^3\nProcessed cargo storage (per mineral): 7,000 kg

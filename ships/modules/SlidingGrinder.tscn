@@ -1,0 +1,177 @@
+[gd_scene load_steps=16 format=2]
+
+[ext_resource path="res://shader/ao-spec-difuse-fast.shader" type="Shader" id=1]
+[ext_resource path="res://sfx/PitchAdjustedAudio.gd" type="Script" id=2]
+[ext_resource path="res://ships/excavator_open.wav" type="AudioStream" id=3]
+[ext_resource path="res://ships/tnrtl-engine_01.wav" type="AudioStream" id=4]
+[ext_resource path="res://ships/modules/grinder.phymat" type="PhysicsMaterial" id=5]
+[ext_resource path="res://ships/GrinderBlade.gd" type="Script" id=6]
+[ext_resource path="res://ships/excavator_close.wav" type="AudioStream" id=7]
+[ext_resource path="res://ships/modules/grinder.material" type="Material" id=8]
+[ext_resource path="res://ships/modules/grinder-n.png" type="Texture" id=9]
+[ext_resource path="res://ships/modules/grinder-c.png" type="Texture" id=10]
+[ext_resource path="res://ships/modules/grinder-m.png" type="Texture" id=11]
+[ext_resource path="res://FunnelTitan/ships/modules/SlidingGrinder.gd" type="Script" id=12]
+
+[sub_resource type="ShaderMaterial" id=4]
+shader = ExtResource( 1 )
+shader_param/maxval = 5.0
+shader_param/sparkBias = 0.0
+shader_param/scale = Vector2( 0.5, 1 )
+shader_param/coatColor = Vector3( 0.02, 0.02, 0.02 )
+shader_param/ref = 0.1
+shader_param/roughness = 0.5
+shader_param/reflectiveness = 1.0
+shader_param/shine = 1.0
+shader_param/mipmapBias = 0.0
+shader_param/map = ExtResource( 11 )
+
+[sub_resource type="CapsuleShape2D" id=2]
+radius = 4.0
+height = 28.0
+
+[sub_resource type="CircleShape2D" id=3]
+radius = 12.0
+
+[node name="Grinder" type="Node2D"]
+position = Vector2( 0, -213 )
+script = ExtResource( 12 )
+grinder1 = NodePath("ArmLeft/Grinder")
+grinder2 = NodePath("RightArm/Grinder")
+arm1 = NodePath("ArmLeft")
+arm2 = NodePath("RightArm")
+restAngle = 0.581
+restAngleLimit = 0.1
+openFactor = 0.603
+spinPitchFactor = 260
+grinderTorque = 20000
+closeTorque = 200000
+
+[node name="ArmLeft" type="RigidBody2D" parent="."]
+position = Vector2( -43, 0 )
+rotation = 1.5708
+collision_layer = 2
+collision_mask = 7
+mass = 0.5
+
+[node name="Sprite" type="Sprite" parent="ArmLeft"]
+material = ExtResource( 8 )
+position = Vector2( 0, -16 )
+texture = ExtResource( 10 )
+normal_map = ExtResource( 9 )
+region_enabled = true
+region_rect = Rect2( 8, 40, 16, 40 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ArmLeft"]
+material = SubResource( 4 )
+position = Vector2( 0, -14 )
+shape = SubResource( 2 )
+
+[node name="Grinder" type="RigidBody2D" parent="ArmLeft"]
+position = Vector2( 0, -28 )
+collision_layer = 2
+collision_mask = 3
+mass = 0.5
+physics_material_override = ExtResource( 5 )
+angular_damp = 2.0
+script = ExtResource( 6 )
+penetration = 4
+
+[node name="Sprite" type="Sprite" parent="ArmLeft/Grinder"]
+material = ExtResource( 8 )
+z_index = -1
+texture = ExtResource( 10 )
+normal_map = ExtResource( 9 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 32, 32 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ArmLeft/Grinder"]
+shape = SubResource( 3 )
+
+[node name="PinJoint2D" type="PinJoint2D" parent="ArmLeft/Grinder"]
+node_a = NodePath("..")
+node_b = NodePath("../..")
+
+[node name="RightArm" type="RigidBody2D" parent="."]
+position = Vector2( 43, 0 )
+rotation = -1.5708
+collision_layer = 2
+collision_mask = 7
+mass = 0.5
+
+[node name="Sprite" type="Sprite" parent="RightArm"]
+material = ExtResource( 8 )
+position = Vector2( 0, -16 )
+scale = Vector2( -1, 1 )
+texture = ExtResource( 10 )
+normal_map = ExtResource( 9 )
+region_enabled = true
+region_rect = Rect2( 8, 40, 16, 40 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RightArm"]
+material = SubResource( 4 )
+position = Vector2( 0, -14 )
+shape = SubResource( 2 )
+
+[node name="Grinder" type="RigidBody2D" parent="RightArm"]
+position = Vector2( 0, -28 )
+collision_layer = 2
+collision_mask = 3
+mass = 0.5
+physics_material_override = ExtResource( 5 )
+angular_damp = 2.0
+script = ExtResource( 6 )
+penetration = 4
+
+[node name="Sprite" type="Sprite" parent="RightArm/Grinder"]
+material = ExtResource( 8 )
+z_index = -1
+texture = ExtResource( 10 )
+normal_map = ExtResource( 9 )
+flip_h = true
+region_enabled = true
+region_rect = Rect2( 0, 0, 32, 32 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RightArm/Grinder"]
+shape = SubResource( 3 )
+
+[node name="PinJoint2D" type="PinJoint2D" parent="RightArm/Grinder"]
+node_a = NodePath("..")
+node_b = NodePath("../..")
+
+[node name="Open" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+volume_db = -5.0
+pitch_scale = 0.5
+bus = "ShipBowels"
+script = ExtResource( 2 )
+
+[node name="Close" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 7 )
+volume_db = -5.0
+pitch_scale = 0.75
+bus = "ShipBowels"
+script = ExtResource( 2 )
+
+[node name="Work" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+volume_db = -5.0
+pitch_scale = 10.0
+bus = "ShipBowels"
+script = ExtResource( 2 )
+
+[node name="GrooveLeft" type="GrooveJoint2D" parent="."]
+position = Vector2( -28, 0 )
+rotation = 1.5708
+node_a = NodePath("../..")
+node_b = NodePath("../ArmLeft")
+length = 48.0
+initial_offset = 1.0
+
+[node name="GrooveRight" type="GrooveJoint2D" parent="."]
+position = Vector2( 28, 0 )
+rotation = -1.5708
+node_a = NodePath("../..")
+node_b = NodePath("../RightArm")
+length = 48.0
+initial_offset = 1.0
