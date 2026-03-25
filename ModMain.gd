@@ -4,7 +4,7 @@ const MOD_PRIORITY = 0
 const MOD_NAME = "Funnel Titan"
 const MOD_VERSION_MAJOR = 0
 const MOD_VERSION_MINOR = 0
-const MOD_VERSION_BUGFIX = 1
+const MOD_VERSION_BUGFIX = 2
 const MOD_VERSION_METADATA = ""
 const MOD_IS_LIBRARY = false
 

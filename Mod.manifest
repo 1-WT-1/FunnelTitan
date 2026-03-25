@@ -4,12 +4,12 @@ name="Funnel Titan"
 description="MOD_CHARYBDIS_DESC"
 brief="MOD_CHARYBDIS_BRIEF"
 author="WT"
-credits=["AtomHeartDragon - initial idea"]
+credits=["AtomHeartDragon - initial idea", "_hev - testing and fixes"]
 
 [version]
 version_major=0
 version_minor=0
-version_bugfix=1
+version_bugfix=2
 
 [tags]
 TAG_ADDS_SHIPS={"type":"array","value":["SHIP_AT225_CB"]}

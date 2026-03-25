@@ -1,2 +1,16 @@
-0.0.1
-- Pre-release
+[0.0.2]
+
+1="* _hev"
+1.1="* Fixed ModMain formatting"
+1.2="* Moved grinders to front of the system list"
+1.3="* Moved front grinders 0.7m inwards to prevent them getting caught on the hull and stop spinning"
+1.4="* Fixed ship config showing two nonexistent slots"
+
+2="* WT"
+2.1="* Fixed wrong material used by funnel hull"
+2.2="* Cargo hold and scanner polygon tweaks"
+2.3="* Removed dealer spawn debug logging"
+
+[0.0.1]
+
+1="* Pre-release"
