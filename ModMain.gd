@@ -12,7 +12,7 @@ var _savedObjects := []
 
 var modPath: String = get_script().resource_path.get_base_dir() + "/"
 
-func _init(modLoader = ModLoader)
+func _init(modLoader = ModLoader):
 	replaceScene("enceladus/Dealer.tscn")
 
 func _ready():
