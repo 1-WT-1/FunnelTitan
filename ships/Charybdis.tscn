@@ -1,10 +1,11 @@
-[gd_scene load_steps=53 format=2]
+[gd_scene load_steps=54 format=2]
 
 [ext_resource path="res://ships/modules/CollapsingRadiator.gd" type="Script" id=1]
 [ext_resource path="res://FunnelTitan/ships/modules/SlidingGrinder.tscn" type="PackedScene" id=2]
 [ext_resource path="res://FunnelTitan/ships/sprites/charybdis-cd.png" type="Texture" id=3]
 [ext_resource path="res://shader/ao-spec-difuse.shader" type="Shader" id=4]
 [ext_resource path="res://sfx/spark_noise.png" type="Texture" id=5]
+[ext_resource path="res://FunnelTitan/ships/sprites/charybdis-m.png" type="Texture" id=6]
 [ext_resource path="res://ships/k225-mask.png" type="Texture" id=7]
 [ext_resource path="res://FunnelTitan/ships/sprites/charybdis-n.png" type="Texture" id=8]
 [ext_resource path="res://FunnelTitan/ships/sprites/charybdis-habitat-cd.png" type="Texture" id=9]
@@ -81,7 +82,7 @@ shader_param/reflectiveness = 0.25
 shader_param/shine = 1.0
 shader_param/mask = ExtResource( 7 )
 shader_param/charges = ExtResource( 5 )
-shader_param/map = ExtResource( 40 )
+shader_param/map = ExtResource( 6 )
 
 [sub_resource type="ShaderMaterial" id=2]
 shader = ExtResource( 4 )
