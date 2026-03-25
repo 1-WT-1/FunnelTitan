@@ -6,6 +6,7 @@ const AT225_CB = {
 	"alias": "AT225-CB",
 	"path": "res://FunnelTitan/ships/Charybdis.tscn",
 	"used_configs": [],
+	"alternate_configs":"AT225",
 	"config": {"config": {
 		"ammo": {
 			"capacity": 1000.0,
