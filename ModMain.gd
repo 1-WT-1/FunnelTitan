@@ -17,22 +17,6 @@ func _init(modLoader = ModLoader):
 
 func _ready():
 	l("Ready!")
-	
-	# Test debug print to verify dealership spawn
-	yield (get_tree().create_timer(3.0), "timeout")
-	var cg = get_node_or_null("/root/CurrentGame")
-	if cg and "modded_ship_list" in cg:
-		var found = false
-		for ship in cg.modded_ship_list:
-			if ship.get("name") == "AT225-CB":
-				found = true
-				break
-		if found:
-			l("TEST DEBUG: AT225-CB CAN spawn at the dealership! (Verified in CurrentGame.modded_ship_list)")
-		else:
-			l("TEST DEBUG ERROR: AT225-CB NOT found in CurrentGame's dealership pool.")
-	else:
-		l("TEST DEBUG WARNING: Could not find HevLib's CurrentGame extension or modded_ship_list.")
 		
 func l(msg: String, title: String = MOD_NAME, version: String = str(MOD_VERSION_MAJOR) + "." + str(MOD_VERSION_MINOR) + "." + str(MOD_VERSION_BUGFIX)):
 	if not MOD_VERSION_METADATA == "":
