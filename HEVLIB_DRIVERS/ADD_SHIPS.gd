@@ -2,7 +2,8 @@ extends Node
 
 const AT225_CB = {
 	"name": "AT225-CB",
-	"alias": "AT225",
+#	"alias": "AT225",
+	"alias": "AT225-CB",
 	"path": "res://FunnelTitan/ships/Charybdis.tscn",
 	"used_configs": [],
 	"config": {"config": {
