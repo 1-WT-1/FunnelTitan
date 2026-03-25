@@ -1,24 +1,28 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://ships/dealer/showroom-AT225.tscn" type="PackedScene" id=1]
-[ext_resource path="res://shader/ao-spec-difuse.shader" type="Shader" id=2]
+[ext_resource path="res://shader/ao-spec-diffuse-sfx.shader" type="Shader" id=2]
+[ext_resource path="res://FunnelTitan/ships/sprites/dealer-charybdis-m.png" type="Texture" id=3]
 
 [sub_resource type="ShaderMaterial" id=1]
 shader = ExtResource( 2 )
-shader_param/maskScale = Vector2( 1, 1 )
-shader_param/frames = Vector2( 1, 1 )
-shader_param/paintJobFactor = 0.0
-shader_param/paintJobBrightAdjust = 16.0
+shader_param/waveSpeed = -0.2
+shader_param/waveBright = 5.0
+shader_param/waveLenght = 1.0
+shader_param/waveOffset = -0.95
+shader_param/aoCut = 1.107
+shader_param/aoMargin = 0.05
+shader_param/waveColor = Color( 0.0313726, 0.0313726, 0.0313726, 1 )
+shader_param/cutColor = Color( 0, 1, 21, 1 )
 shader_param/maxval = 5.0
 shader_param/sparkBias = 0.0
-shader_param/scale = Vector2( 1, 1 )
-shader_param/sparkColor = Vector3( 50, 10, 100 )
+shader_param/scale = Vector2( 0.5, 1 )
 shader_param/coatColor = Vector3( 0.02, 0.02, 0.02 )
-shader_param/sparkSpeed = Plane( 0.011, 0.013, 0.017, 0.019 )
 shader_param/ref = 0.1
 shader_param/roughness = 0.5
-shader_param/reflectiveness = 0.25
-shader_param/shine = 1.0
+shader_param/reflectiveness = 8.0
+shader_param/shine = 0.25
+shader_param/map = ExtResource( 3 )
 
 [sub_resource type="StreamTexture" id=2]
 flags = 4
