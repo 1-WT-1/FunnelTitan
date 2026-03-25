@@ -207,16 +207,6 @@ dialogTree = NodePath("UberConversation")
 cargoHoldArea = Rect2( -135, -426, 270, 630 )
 cargoHoldOffset = Vector2( 0, 105 )
 
-[node name="Grinder" parent="." instance=ExtResource( 2 )]
-restDistance = 41.5
-openDistance = 66.0
-
-[node name="ArmLeft" parent="Grinder" index="0"]
-position = Vector2( -41.5, 0 )
-
-[node name="RightArm" parent="Grinder" index="1"]
-position = Vector2( 41.5, 0 )
-
 [node name="Grinder2" parent="." instance=ExtResource( 16 )]
 position = Vector2( 0, -380 )
 restAngle = 0.785398
@@ -234,6 +224,16 @@ position = Vector2( -154, -38 )
 
 [node name="RightSpring" parent="Grinder2" index="3"]
 position = Vector2( 154, -38 )
+
+[node name="Grinder" parent="." instance=ExtResource( 2 )]
+restDistance = 41.5
+openDistance = 66.0
+
+[node name="ArmLeft" parent="Grinder" index="0"]
+position = Vector2( -41.5, 0 )
+
+[node name="RightArm" parent="Grinder" index="1"]
+position = Vector2( 41.5, 0 )
 
 [node name="Noises" parent="." instance=ExtResource( 28 )]
 
@@ -927,8 +927,8 @@ texture = ExtResource( 18 )
 [connection signal="body_entered" from="CargoHoldAreaHull" to="." method="_on_CargoHoldArea_body_entered"]
 [connection signal="body_exited" from="CargoHoldAreaHull" to="." method="_on_CargoHoldArea_body_exited"]
 
-[editable path="Grinder"]
 [editable path="Grinder2"]
+[editable path="Grinder"]
 [editable path="Noises"]
 [editable path="MineralProcessingUnit_DRY"]
 [editable path="weapon-left"]
