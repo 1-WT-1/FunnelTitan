@@ -13,6 +13,8 @@ version_bugfix=2
 
 [tags]
 TAG_ADDS_SHIPS={"type":"array","value":["SHIP_AT225_CB"]}
+HEVLIB_GITHUB={"URL":"https://github.com/rwqfsfasxc100/FunnelTitan"}
+HEVLIB_DISCORD={"URL":"https://discord.com/channels/426287934870781952/1486146431185322135"}
 
 [languages]
 en="100%"
