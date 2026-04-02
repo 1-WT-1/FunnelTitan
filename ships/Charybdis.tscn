@@ -1,4 +1,4 @@
-[gd_scene load_steps=54 format=2]
+[gd_scene load_steps=55 format=2]
 
 [ext_resource path="res://ships/modules/CollapsingRadiator.gd" type="Script" id=1]
 [ext_resource path="res://FunnelTitan/ships/modules/SlidingGrinder.tscn" type="PackedScene" id=2]
@@ -42,6 +42,9 @@
 [ext_resource path="res://ships/ship-ctrl.gd" type="Script" id=43]
 [ext_resource path="res://ships/modules/ShipCamera.tscn" type="PackedScene" id=44]
 [ext_resource path="res://ships/shipHull.phymat" type="PhysicsMaterial" id=45]
+
+[sub_resource type="CircleShape2D" id=17]
+radius = 19.0
 
 [sub_resource type="GDScript" id=1]
 script/source = "tool
@@ -277,15 +280,54 @@ position = Vector2( -154, -38 )
 [node name="RightSpring" parent="Grinder2" index="3"]
 position = Vector2( 154, -38 )
 
+[node name="FunnelGrinderSlot" type="Node2D" parent="."]
+position = Vector2( 0, -300 )
+
 [node name="Grinder" parent="." instance=ExtResource( 2 )]
-restDistance = 41.5
+z_index = 29
+restDistance = 46.0
 openDistance = 66.0
+distanceLimit = 1.0
 
 [node name="ArmLeft" parent="Grinder" index="0"]
-position = Vector2( -41.5, 0 )
+position = Vector2( -47, 0 )
+mass = 1.0
+
+[node name="Grinder" parent="Grinder/ArmLeft" index="2"]
+mass = 1.0
+
+[node name="Sprite" parent="Grinder/ArmLeft/Grinder" index="0"]
+scale = Vector2( 1.4, 1.4 )
+
+[node name="CollisionShape2D" parent="Grinder/ArmLeft/Grinder" index="1"]
+shape = SubResource( 17 )
+
+[node name="PinJoint2D" parent="Grinder/ArmLeft/Grinder" index="2"]
+bias = 0.9
 
 [node name="RightArm" parent="Grinder" index="1"]
-position = Vector2( 41.5, 0 )
+position = Vector2( 47, 0 )
+mass = 1.0
+
+[node name="Grinder" parent="Grinder/RightArm" index="2"]
+mass = 1.0
+
+[node name="Sprite" parent="Grinder/RightArm/Grinder" index="0"]
+scale = Vector2( 1.4, 1.4 )
+
+[node name="CollisionShape2D" parent="Grinder/RightArm/Grinder" index="1"]
+shape = SubResource( 17 )
+
+[node name="PinJoint2D" parent="Grinder/RightArm/Grinder" index="2"]
+bias = 0.9
+
+[node name="GrooveLeft" parent="Grinder" index="5"]
+bias = 0.9
+length = 42.0
+
+[node name="GrooveRight" parent="Grinder" index="6"]
+bias = 0.9
+length = 42.0
 
 [node name="Noises" parent="." instance=ExtResource( 28 )]
 
@@ -294,7 +336,6 @@ stream = ExtResource( 41 )
 
 [node name="CargoBayCoverageVisual" type="CanvasLayer" parent="."]
 layer = 128
-visible = false
 script = SubResource( 1 )
 
 [node name="Center" type="Node2D" parent="CargoBayCoverageVisual"]
@@ -545,7 +586,7 @@ autoplay = "appear"
 anims/appear = SubResource( 5 )
 
 [node name="CargoBaffles" parent="." instance=ExtResource( 34 )]
-position = Vector2( 0, -89 )
+position = Vector2( 0, -85 )
 z_index = 50
 
 [node name="AIdebug" parent="." instance=ExtResource( 37 )]

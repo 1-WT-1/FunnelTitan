@@ -1,0 +1,48 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://FunnelTitan/ships/modules/SlidingGrinder.tscn" type="PackedScene" id=1]
+
+[sub_resource type="CapsuleShape2D" id=100]
+radius = 4.0
+height = 22.0
+
+[node name="FunnelGrinders1" type="Node2D"]
+
+[node name="Pair1" parent="." instance=ExtResource( 1 )]
+position = Vector2( 0, 0 )
+z_index = 28
+restDistance = 0.0
+openDistance = 5.0
+closeTorque = 200000
+
+[node name="ArmLeft" parent="Pair1" index="0"]
+position = Vector2( -70, 80 )
+rotation = 0.872665
+
+[node name="Sprite" parent="Pair1/ArmLeft" index="0"]
+visible = false
+
+[node name="CollisionShape2D" parent="Pair1/ArmLeft" index="1"]
+shape = SubResource( 100 )
+
+[node name="RightArm" parent="Pair1" index="1"]
+position = Vector2( 70, 80 )
+rotation = -0.872665
+
+[node name="Sprite" parent="Pair1/RightArm" index="0"]
+visible = false
+
+[node name="CollisionShape2D" parent="Pair1/RightArm" index="1"]
+shape = SubResource( 100 )
+
+[node name="GrooveLeft" parent="Pair1" index="5"]
+position = Vector2( -70, 80 )
+rotation = 0.872665
+length = 10.0
+
+[node name="GrooveRight" parent="Pair1" index="6"]
+position = Vector2( 70, 80 )
+rotation = -0.872665
+length = 10.0
+
+[editable path="Pair1"]

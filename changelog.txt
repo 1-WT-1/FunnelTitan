@@ -1,3 +1,15 @@
+[0.1.0]
+1="* WT"
+1.1="* Removed close torque override on SlidingGrinder scene, making closing force of funnel grinders 2.5 bigger"
+1.2="* Made deep grinders 1.5x bigger than before"
+1.3="* Adjusted funnel grinders placement"
+1.4="* Adjusted funnel grinders mass"
+1.5="* Made funnel grinders significantly harder to pull apart (bias on joints)"
+1.6="* Added a brake to SlidingGrinders to prevent ore from escaping by rotating grinder wheels"
+1.7="* Moved CargoBaffles to not intersect funnel grinders"
+1.8="* Created funnel grinder upgrades (WIP)"
+1.9="* Redid SlidingGrinder script to support rotated grinders"
+
 [0.0.2]
 
 1="* _hev"
