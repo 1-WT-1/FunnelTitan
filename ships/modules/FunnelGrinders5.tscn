@@ -66,8 +66,8 @@ openDistance = 5.0
 closeTorque = 200000
 
 [node name="ArmLeft" parent="Pair2" index="0"]
-position = Vector2( -86, 46 )
-rotation = 0.872665
+position = Vector2( -93, 40 )
+rotation = 1.054
 
 [node name="Sprite" parent="Pair2/ArmLeft" index="0"]
 visible = false
@@ -84,8 +84,8 @@ position = Vector2( 0, -24 )
 shape = SubResource( 101 )
 
 [node name="RightArm" parent="Pair2" index="1"]
-position = Vector2( 86, 46 )
-rotation = -0.872665
+position = Vector2( 93, 40 )
+rotation = -1.054
 
 [node name="Sprite" parent="Pair2/RightArm" index="0"]
 visible = false
@@ -102,14 +102,14 @@ position = Vector2( 0, -22 )
 shape = SubResource( 101 )
 
 [node name="GrooveLeft" parent="Pair2" index="5"]
-position = Vector2( -86, 46 )
-rotation = 0.872665
+position = Vector2( -93, 40 )
+rotation = 1.054
 node_a = NodePath("../../../..")
 length = 10.0
 
 [node name="GrooveRight" parent="Pair2" index="6"]
-position = Vector2( 86, 46 )
-rotation = -0.872665
+position = Vector2( 93, 40 )
+rotation = -1.054
 node_a = NodePath("../../../..")
 length = 10.0
 
@@ -120,8 +120,8 @@ openDistance = 5.0
 closeTorque = 200000
 
 [node name="ArmLeft" parent="Pair3" index="0"]
-position = Vector2( -108, 11 )
-rotation = 1.13446
+position = Vector2( -111, 6 )
+rotation = 1.150
 
 [node name="Sprite" parent="Pair3/ArmLeft" index="0"]
 visible = false
@@ -137,8 +137,8 @@ position = Vector2( 0, -24 )
 shape = SubResource( 101 )
 
 [node name="RightArm" parent="Pair3" index="1"]
-position = Vector2( 108, 11 )
-rotation = -1.13446
+position = Vector2( 111, 6 )
+rotation = -1.150
 
 [node name="Sprite" parent="Pair3/RightArm" index="0"]
 visible = false
@@ -154,14 +154,14 @@ position = Vector2( 0, -24 )
 shape = SubResource( 101 )
 
 [node name="GrooveLeft" parent="Pair3" index="5"]
-position = Vector2( -108, 11 )
-rotation = 1.13446
+position = Vector2( -111, 6 )
+rotation = 1.150
 node_a = NodePath("../../../..")
 length = 10.0
 
 [node name="GrooveRight" parent="Pair3" index="6"]
-position = Vector2( 108, 11 )
-rotation = -1.13446
+position = Vector2( 111, 6 )
+rotation = -1.150
 node_a = NodePath("../../../..")
 length = 10.0
 
@@ -172,8 +172,8 @@ openDistance = 5.0
 closeTorque = 200000
 
 [node name="ArmLeft" parent="Pair4" index="0"]
-position = Vector2( -126, -24 )
-rotation = 1.22173
+position = Vector2( -125, -27 )
+rotation = 1.208
 
 [node name="Sprite" parent="Pair4/ArmLeft" index="0"]
 visible = false
@@ -190,8 +190,8 @@ position = Vector2( 0, -24 )
 shape = SubResource( 101 )
 
 [node name="RightArm" parent="Pair4" index="1"]
-position = Vector2( 126, -24 )
-rotation = -1.22173
+position = Vector2( 125, -27 )
+rotation = -1.208
 
 [node name="Sprite" parent="Pair4/RightArm" index="0"]
 visible = false
@@ -208,14 +208,14 @@ position = Vector2( 0, -24 )
 shape = SubResource( 101 )
 
 [node name="GrooveLeft" parent="Pair4" index="5"]
-position = Vector2( -126, -24 )
-rotation = 1.22173
+position = Vector2( -125, -27 )
+rotation = 1.208
 node_a = NodePath("../../../..")
 length = 10.0
 
 [node name="GrooveRight" parent="Pair4" index="6"]
-position = Vector2( 126, -24 )
-rotation = -1.22173
+position = Vector2( 125, -27 )
+rotation = -1.208
 node_a = NodePath("../../../..")
 length = 10.0
 

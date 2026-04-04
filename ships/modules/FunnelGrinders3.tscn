@@ -66,8 +66,8 @@ openDistance = 5.0
 closeTorque = 200000
 
 [node name="ArmLeft" parent="Pair3" index="0"]
-position = Vector2( -108, 11 )
-rotation = 1.13446
+position = Vector2( -111, 6 )
+rotation = 1.150
 
 [node name="Sprite" parent="Pair3/ArmLeft" index="0"]
 visible = false
@@ -83,8 +83,8 @@ position = Vector2( 0, -24 )
 shape = SubResource( 101 )
 
 [node name="RightArm" parent="Pair3" index="1"]
-position = Vector2( 108, 11 )
-rotation = -1.13446
+position = Vector2( 111, 6 )
+rotation = -1.150
 
 [node name="Sprite" parent="Pair3/RightArm" index="0"]
 visible = false
@@ -100,14 +100,14 @@ position = Vector2( 0, -24 )
 shape = SubResource( 101 )
 
 [node name="GrooveLeft" parent="Pair3" index="5"]
-position = Vector2( -108, 11 )
-rotation = 1.13446
+position = Vector2( -111, 6 )
+rotation = 1.150
 node_a = NodePath("../../../..")
 length = 10.0
 
 [node name="GrooveRight" parent="Pair3" index="6"]
-position = Vector2( 108, 11 )
-rotation = -1.13446
+position = Vector2( 111, 6 )
+rotation = -1.150
 node_a = NodePath("../../../..")
 length = 10.0
 
@@ -133,7 +133,7 @@ shape = SubResource( 100 )
 position = Vector2( 0, -24 )
 
 [node name="CollisionShape2D" parent="Pair5/ArmLeft/Grinder" index="1"]
-shape = SubResource( 103 )
+shape = SubResource( 101 )
 
 [node name="RightArm" parent="Pair5" index="1"]
 position = Vector2( 139, -59 )
@@ -151,7 +151,7 @@ shape = SubResource( 100 )
 position = Vector2( 0, -24 )
 
 [node name="CollisionShape2D" parent="Pair5/RightArm/Grinder" index="1"]
-shape = SubResource( 103 )
+shape = SubResource( 101 )
 
 [node name="GrooveLeft" parent="Pair5" index="5"]
 position = Vector2( -139, -59 )
