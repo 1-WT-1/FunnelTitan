@@ -1,4 +1,4 @@
-[gd_scene load_steps=55 format=2]
+[gd_scene load_steps=56 format=2]
 
 [ext_resource path="res://ships/modules/CollapsingRadiator.gd" type="Script" id=1]
 [ext_resource path="res://FunnelTitan/ships/modules/SlidingGrinder.tscn" type="PackedScene" id=2]
@@ -12,6 +12,7 @@
 [ext_resource path="res://ships/Hull.gd" type="Script" id=10]
 [ext_resource path="res://FunnelTitan/ships/sprites/charybdis-habitat-m.png" type="Texture" id=11]
 [ext_resource path="res://FunnelTitan/ships/sprites/charybdis-habitat-n.png" type="Texture" id=12]
+[ext_resource path="res://FunnelTitan/ships/modules/FunnelGrinderSlot.tscn" type="PackedScene" id=13]
 [ext_resource path="res://ships/modules/Grinder.tscn" type="PackedScene" id=16]
 [ext_resource path="res://ships/k225-n.png" type="Texture" id=17]
 [ext_resource path="res://ships/k225-cl.png" type="Texture" id=18]
@@ -280,9 +281,6 @@ position = Vector2( -154, -38 )
 [node name="RightSpring" parent="Grinder2" index="3"]
 position = Vector2( 154, -38 )
 
-[node name="FunnelGrinderSlot" type="Node2D" parent="."]
-position = Vector2( 0, -300 )
-
 [node name="Grinder" parent="." instance=ExtResource( 2 )]
 z_index = 29
 restDistance = 46.0
@@ -328,6 +326,9 @@ length = 42.0
 [node name="GrooveRight" parent="Grinder" index="6"]
 bias = 0.9
 length = 42.0
+
+[node name="FunnelGrinderSlot" parent="." instance=ExtResource( 13 )]
+z_index = 29
 
 [node name="Noises" parent="." instance=ExtResource( 28 )]
 
@@ -1050,6 +1051,7 @@ texture = ExtResource( 18 )
 
 [editable path="Grinder2"]
 [editable path="Grinder"]
+[editable path="FunnelGrinderSlot"]
 [editable path="Noises"]
 [editable path="MineralProcessingUnit_DRY"]
 [editable path="weapon-left"]
