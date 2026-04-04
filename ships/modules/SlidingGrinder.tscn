@@ -31,6 +31,7 @@ radius = 4.0
 height = 28.0
 
 [sub_resource type="CircleShape2D" id=3]
+resource_local_to_scene = true
 radius = 12.0
 
 [node name="Grinder" type="Node2D"]
@@ -40,12 +41,8 @@ grinder1 = NodePath("ArmLeft/Grinder")
 grinder2 = NodePath("RightArm/Grinder")
 arm1 = NodePath("ArmLeft")
 arm2 = NodePath("RightArm")
-restAngle = 0.581
-restAngleLimit = 0.1
-openFactor = 0.603
 spinPitchFactor = 260
 grinderTorque = 20000
-closeTorque = 200000
 
 [node name="ArmLeft" type="RigidBody2D" parent="."]
 position = Vector2( -43, 0 )

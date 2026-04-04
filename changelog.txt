@@ -1,3 +1,37 @@
+[0.1.1]
+
+1="* _hev"
+1.1="* Adjusted upgrade slots sorting; funnel grinder upgrades now appear above the Cargo Bay"
+1.2="* Fixed funnel grinder upgrades not appearing when installed"
+
+2="* WT"
+2.1="* Adjusted funnel grinder positions for better clearance"
+2.2="* Fixed grinder upgrades not being physically attached to ship"
+2.3="* Added ship description text and funnel grinder manual"
+
+[0.1.0]
+
+1="* _hev"
+1.1="* Fixed dealership promotional alias"
+1.2="* Added GitHub and Discord links to the mod info"
+1.3="* Localized the Cargo Coverage Visual tool to the ship"
+1.4="* Added loadout references for future HevLib integration"
+
+2="* WT"
+2.1="* Increased funnel grinder closing force by 2.5x"
+2.2="* Increased funnel grinder size by 1.5x"
+2.3="* Adjusted funnel grinders placement and mass"
+2.4="* Increased joint strength to make funnel grinders significantly harder to pull apart"
+2.5="* Added brakes to grinders to prevent ore from escaping"
+2.6="* Moved CargoBaffles to prevent intersecting with funnel grinders"
+2.7="* Added funnel grinder upgrades"
+2.8="* Rewrote sliding grinder script to support rotated grinders"
+2.9="* Adjusted cargo area hull colliders"
+2.10="* Added mod icon"
+2.11="* Edited promotional images and fixed shader materials"
+2.12="* Removed polygon scaling"
+2.13="* Updated general colliders"
+
 [0.0.2]
 
 1="* _hev"
