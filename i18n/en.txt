@@ -3,8 +3,8 @@ MOD_CHARYBDIS_DESC|A K225 variant with a front triangle section hollowed out int
 MOD_CHARYBDIS_BRIEF|Funnel K225 variant
 SHIP_AT225_CB|Antonoff-Titan K225 "Charybdis"
 SYSTEM_FUNNEL_GRINDERS|Funnel Grinders
-SHIP_AT225_CB_DESC|A K225 variant with a front triangle section hollowed out into a funnel. \n WIP NEED HELP
-SHIP_AT225_CB_SPECS|Make: Antonoff-Titan Heavy Industries\nLow-Stress Hardpoints: 2\nDocking Bays: 4\nCrew: 12\nDry mass: 220,100 kg\nCargo bay: 246 m^3\nProcessed cargo storage (per mineral): 7,000 kg
+SHIP_AT225_CB_DESC|This specialized excavation variant modifies the K225 hull by removing the default excavator and the two forward docking bays. In their place is a large intake funnel protected by a simple metal mesh, allowing rocks to feed directly into internal grinders. To make physical room for the funnel and the internal grinder machinery, thrusters have been relocated outwards.
+SHIP_AT225_CB_SPECS|Make: Antonoff-Titan Heavy Industries\nLow-Stress Hardpoints: 2\nDocking Bays: 4\nCrew: 12\nDry mass: 225,100 kg\nCargo bay: 246 m^3\nProcessed cargo storage (per mineral): 7,000 kg
 FUNNEL_UPGRADE_SLOT_NAME|Funnel Upgrade Slot
 SYSTEM_FUNNEL_GRINDERS_1|1x Grinder Pair
 SYSTEM_FUNNEL_GRINDERS_1_DESC|Adds one pair of grinders to the funnel.
@@ -15,4 +15,5 @@ SYSTEM_FUNNEL_GRINDERS_3_SPECS|Mass: 6,000 kg
 SYSTEM_FUNNEL_GRINDERS_5|5x Grinder Pairs
 SYSTEM_FUNNEL_GRINDERS_5_DESC|Fills the funnel with five pairs of grinders.
 SYSTEM_FUNNEL_GRINDERS_5_SPECS|Mass: 10,000 kg
+SYSTEM_FUNNEL_GRINDERS_MANUAL|Toggled alongside the main excavator.\nWhen active, the grinder assembly moves inward into the funnel.\nCrushes incoming ringroinds.
 

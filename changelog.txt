@@ -1,3 +1,14 @@
+[0.1.1]
+
+1="* _hev"
+1.1="* Adjusted upgrade slots sorting; funnel grinder upgrades now appear above the Cargo Bay"
+1.2="* Fixed funnel grinder upgrades not appearing when installed"
+
+2="* WT"
+2.1="* Adjusted funnel grinder positions for better clearance"
+2.2="* Fixed grinder upgrades not being physically attached to ship"
+2.3="* Added ship description text and funnel grinder manual"
+
 [0.1.0]
 
 1="* _hev"
@@ -13,7 +24,7 @@
 2.4="* Increased joint strength to make funnel grinders significantly harder to pull apart"
 2.5="* Added brakes to grinders to prevent ore from escaping"
 2.6="* Moved CargoBaffles to prevent intersecting with funnel grinders"
-2.7="* Added funnel grinder upgrades (Work In Progress)"
+2.7="* Added funnel grinder upgrades"
 2.8="* Rewrote sliding grinder script to support rotated grinders"
 2.9="* Adjusted cargo area hull colliders"
 2.10="* Added mod icon"

@@ -282,7 +282,6 @@ position = Vector2( -154, -38 )
 position = Vector2( 154, -38 )
 
 [node name="Grinder" parent="." instance=ExtResource( 2 )]
-z_index = 29
 restDistance = 46.0
 openDistance = 66.0
 distanceLimit = 1.0
@@ -328,7 +327,6 @@ bias = 0.9
 length = 42.0
 
 [node name="FunnelGrinderSlot" parent="." instance=ExtResource( 13 )]
-z_index = 29
 
 [node name="Noises" parent="." instance=ExtResource( 28 )]
 
@@ -337,6 +335,7 @@ stream = ExtResource( 41 )
 
 [node name="CargoBayCoverageVisual" type="CanvasLayer" parent="."]
 layer = 128
+visible = false
 script = SubResource( 1 )
 
 [node name="Center" type="Node2D" parent="CargoBayCoverageVisual"]
