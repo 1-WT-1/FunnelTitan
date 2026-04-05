@@ -23,3 +23,13 @@ en="100%"
 manifest_version=2.2
 manifest_url="https://raw.githubusercontent.com/1-WT-1/FunnelTitan/main/Mod.manifest"
 changelog_path="changelog.txt"
+
+[configs]
+FUNNEL_TITAN_CONFIG_SECTION={
+	"use_main_slots":{
+		"name":"FUNNEL_TITAN_CONFIG_MAIN_SLOTS",
+		"description":"FUNNEL_TITAN_CONFIG_MAIN_SLOTS_DESC",
+		"type":"bool",
+		"default":false
+	}
+}
