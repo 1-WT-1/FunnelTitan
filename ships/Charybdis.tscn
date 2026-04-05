@@ -277,6 +277,7 @@ mass = 1.0
 mass = 1.0
 
 [node name="Sprite" parent="Grinder/ArmLeft/Grinder" index="0"]
+visible = false
 scale = Vector2( 1.4, 1.4 )
 
 [node name="CollisionShape2D" parent="Grinder/ArmLeft/Grinder" index="1"]
@@ -293,6 +294,7 @@ mass = 1.0
 mass = 1.0
 
 [node name="Sprite" parent="Grinder/RightArm/Grinder" index="0"]
+visible = false
 scale = Vector2( 1.4, 1.4 )
 
 [node name="CollisionShape2D" parent="Grinder/RightArm/Grinder" index="1"]
