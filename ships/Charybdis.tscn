@@ -685,6 +685,66 @@ rotation = -0.174533
 [node name="SYSTEM_PDT-R" parent="weapon-right" index="30"]
 position = Vector2( 69, -71 )
 
+[node name="weapon-left2" parent="." instance=ExtResource( 24 )]
+visible = false
+position = Vector2( -92, -435 )
+z_index = 26
+slot = "mainLeft"
+toggleCommand = "ship_slot_1"
+
+[node name="SYSTEM_PDMWG-L" parent="weapon-left2" index="13"]
+visible = true
+
+[node name="SYSTEM_ACTEMD14" parent="weapon-left2" index="19"]
+pivotPath = NodePath("Pivot")
+weaponPath = NodePath("Pivot/massdriver")
+audioPath = NodePath("Actuation")
+lightPath = NodePath("Pivot/Light")
+
+[node name="SYSTEM_ACL200P" parent="weapon-left2" index="20"]
+weaponPath = NodePath("Pivot/laster-pulse")
+
+[node name="SYSTEM_SCOOP-L" parent="weapon-left2" index="22"]
+command = ""
+passFireAsCommand = ""
+
+[node name="SYSTEM_HUNK-L" parent="weapon-left2" index="24"]
+position = Vector2( 0, 80 )
+rotation = 0.174533
+
+[node name="SYSTEM_PDT-L" parent="weapon-left2" index="29"]
+position = Vector2( -69, -71 )
+
+[node name="weapon-right2" parent="." instance=ExtResource( 24 )]
+visible = false
+position = Vector2( 92, -435 )
+z_index = 26
+slot = "mainRight"
+toggleCommand = "ship_slot_2"
+
+[node name="SYSTEM_PDMWG-R" parent="weapon-right2" index="14"]
+visible = true
+
+[node name="SYSTEM_ACTEMD14" parent="weapon-right2" index="19"]
+pivotPath = NodePath("Pivot")
+weaponPath = NodePath("Pivot/massdriver")
+audioPath = NodePath("Actuation")
+lightPath = NodePath("Pivot/Light")
+
+[node name="SYSTEM_ACL200P" parent="weapon-right2" index="20"]
+weaponPath = NodePath("Pivot/laster-pulse")
+
+[node name="SYSTEM_SCOOP-R" parent="weapon-right2" index="21"]
+command = ""
+passFireAsCommand = ""
+
+[node name="SYSTEM_HUNK-R" parent="weapon-right2" index="23"]
+position = Vector2( 0, 80 )
+rotation = -0.174533
+
+[node name="SYSTEM_PDT-R" parent="weapon-right2" index="30"]
+position = Vector2( 69, -71 )
+
 [node name="weapon-left-back" parent="." instance=ExtResource( 24 )]
 visible = false
 position = Vector2( -122, -477 )
@@ -1057,6 +1117,8 @@ texture = ExtResource( 18 )
 [editable path="MineralProcessingUnit_DRY"]
 [editable path="weapon-left"]
 [editable path="weapon-right"]
+[editable path="weapon-left2"]
+[editable path="weapon-right2"]
 [editable path="weapon-left-back"]
 [editable path="weapon-right-back"]
 [editable path="weapon-left-back2"]
