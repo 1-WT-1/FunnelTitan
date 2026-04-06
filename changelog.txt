@@ -1,3 +1,13 @@
+[0.1.2]
+
+1="* _hev"
+1.1="* Fixed nanodrones targeting the wrong grinders"
+
+2="* WT"
+2.1="* Added config to change forward hardpoints into high-stress; requires equipment removal before restart"
+2.2="* Made grinders invisible to prevent them from clipping through the ship's hull"
+2.3="* Switched to using Translation Tracker for translations: https://github.com/rwqfsfasxc100/TranslationTracker"
+
 [0.1.1]
 
 1="* _hev"
