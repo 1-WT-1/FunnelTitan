@@ -1,5 +1,3 @@
-extends Node
-
 const CHARYBDIS = {
 	"ship_name": "SHIP_AT225_CB",
 	"modifications": [

@@ -1,0 +1,14 @@
+;MOD_ID|wt.funnel_titan
+;MOD_NAME|Funnel Titan
+;MOD_ICON|https://raw.githubusercontent.com/1-WT-1/FunnelTitan/refs/heads/main/icon.png
+;MOD_ZIP_NAME|FunnelTitan.zip
+
+[center][b]Funnel Titan[/b][/center]
+
+[b]Antonoff-Titan K225 "Charybdis"[/b]
+
+This specialized excavation variant modifies the K225 hull by removing the default excavator and the two forward docking bays. In their place is a large intake funnel protected by a simple metal mesh, allowing rocks to feed directly into internal grinders. To make physical room for the funnel and the internal grinder machinery, thrusters have been relocated outwards.
+
+[u][b]Additions:[/b][/u]
+[indent]* [b]Funnel Grinders[/b]: Toggled alongside the main excavator. Crushes incoming ringroids.[/indent]
+[indent]* [b]Grinder Upgrades[/b]: Options for 1, 3, or 5 grinder pairs.[/indent]

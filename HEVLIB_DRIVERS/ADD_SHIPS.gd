@@ -1,5 +1,3 @@
-extends Node
-
 const AT225_CB = {
 	"name": "AT225-CB",
 #	"alias": "AT225",

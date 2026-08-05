@@ -15,7 +15,7 @@ dest_files=[ "res://FunnelTitan/ships/sprites/dealer-charybdis-cd.stex" ]
 [params]
 
 compress/mode=0
-compress/lossy_quality=0.7
+compress/lossy_quality=0.95
 compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
@@ -29,7 +29,7 @@ process/premult_alpha=false
 process/HDR_as_SRGB=false
 process/invert_color=false
 process/normal_map_invert_y=false
-stream=false
+stream=1
 size_limit=0
 detect_3d=true
 svg/scale=1.0

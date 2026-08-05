@@ -2,23 +2,25 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://FunnelTitan/ships/sprites/dealer-charybdis-n.stex"
+path.s3tc="res://FunnelTitan/ships/sprites/dealer-charybdis-n.s3tc.stex"
+path.etc2="res://FunnelTitan/ships/sprites/dealer-charybdis-n.etc2.stex"
 metadata={
-"vram_texture": false
+"imported_formats": [ "s3tc", "etc2" ],
+"vram_texture": true
 }
 
 [deps]
 
 source_file="res://FunnelTitan/ships/sprites/dealer-charybdis-n.png"
-dest_files=[ "res://FunnelTitan/ships/sprites/dealer-charybdis-n.stex" ]
+dest_files=[ "res://FunnelTitan/ships/sprites/dealer-charybdis-n.s3tc.stex", "res://FunnelTitan/ships/sprites/dealer-charybdis-n.etc2.stex" ]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/bptc_ldr=0
-compress/normal_map=0
+compress/normal_map=1
 flags/repeat=0
 flags/filter=true
 flags/mipmaps=false
@@ -29,7 +31,7 @@ process/premult_alpha=false
 process/HDR_as_SRGB=false
 process/invert_color=false
 process/normal_map_invert_y=false
-stream=false
+stream=1
 size_limit=0
 detect_3d=true
 svg/scale=1.0
